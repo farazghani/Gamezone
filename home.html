@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="styleSheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    
+</head>
+<body ng-controller="myCtrl" ng-class="{ 'dark-mode': isDarkTheme, 'light-mode': !isDarkTheme }">
+    <header>
+        <nav class="navbar" ng-class="{ 'dark-mode': isDarkTheme, 'light-mode': !isDarkTheme }">
+        <ul class="nav-link">
+            <li><a href="#snakegame">SNAKE</a></li>
+            <li><a href="#bounce">BOUNCE </a></li>
+            <li><a href="#flappybird">FLAPPYBIRD</a></li>
+            <li class="nav-toggle" id="toggleTheme" ng-click="toggleTheme()">
+                <i class="fa fa-adjust"></i>THEME
+            </li>
+        </nav>
+    </header>
+    <div class="gamecontainer" id="snakegame">
+        <canvas id="snakeCanvas" width="400" height="400"></canvas>
+        <br>
+        <button onclick="startSnakeGame()">start Snake game</button>
+   
+     
+    </div>
+
+    <div class="gamecontainer" id="bounce">
+        <canvas id="bounceCanvas" width="400" height="400"></canvas>
+        <br>
+        <button onclick="startBounceGame()">Start Bounce Ball Game</button>
+       
+            
+    </div>
+
+
+    <div class="gamecontainer" id="flappybird">
+        <canvas id="flappyCanvas" width="400" height="400"></canvas>
+        <br>
+        <button onclick="startFlappyBirdGame()">start</button>
+      
+    </div>
+    <footer>
+        <h1>created by faraz</h1>
+    </footer>
+    
+        <script src="angular.js"></script>
+        <script src="snake.js"></script> 
+        <script src="bounce.js"></script> 
+        <script src="flappybird.js"></script>
+</body>
+</html>

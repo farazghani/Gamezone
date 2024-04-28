@@ -1,0 +1,131 @@
+body{
+    height: 100vh;
+    margin: 0;
+    
+}
+
+a{
+ text-decoration: none;
+}
+
+.navbar{
+    background-color: rgb(18, 16, 12);
+    color:aqua;
+    overflow: hidden;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+}
+
+
+
+
+.nav-link{
+    list-style-type: none;
+    margin-top:5px;
+    padding: 0;
+    
+
+}
+
+
+
+
+.nav-link li{
+    display: inline-block;
+    color: rgb(95, 51, 51);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  
+}
+
+.navlink a {
+    text-decoration: none;
+}
+.nav-link li a:hover {
+    background-color: gray; 
+    color: black;
+}
+
+.nav-link #toggle {
+    order: -1; /* Move the toggle icon to the beginning */
+    margin-left: 10px; /* Add some space between the toggle icon and the edge */
+    color:#f08f8f
+}
+
+.gamecontainer{
+    text-align: center;
+    background-color: rgb(39, 11, 87);
+    border: 1px solid black;
+    margin: auto;
+    padding: 40px;
+    margin-bottom: 40px;
+    width: fit-content;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-image: url("img/0edea130ad151463d1874ae0d3c412ca.jpg");
+    background-color: #222; 
+    color: #fff; 
+  
+
+}
+
+.dark-mode .nav-link  a{
+    color: #fff;
+}
+
+
+
+  .dark-mode .nav-link a:hover {
+      background-color: rgba(255, 255, 255, 0.1); 
+      color: #fff; 
+}  
+
+
+
+
+/* Light mode */
+.light-mode {
+    background-image: url("img/2cbbdac309bb628a1588a6659f1bebb9.jpg");
+    background-color: #f08f8f; 
+    color: #222; 
+    
+
+}
+
+.light-mode .navbar{
+    background-color: #f0f0f0;
+}
+
+
+.light-mode .nav-link a {
+    color: #222; 
+}
+
+
+
+.light-mode .nav-link a:hover {
+    background-color: #f0f0f0;
+    color: #222; 
+}
+
+
+
+canvas{
+    border: 5px solid black;
+    
+}
+
+
+#flappycanvas {
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+
+}
+
+
